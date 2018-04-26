@@ -760,13 +760,7 @@ form {
       border-bottom: 1px solid #eb008b;
       border-top: 1px solid #eb008b; }
   .page-titles a {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
     color: black; }
-    .page-titles a:last-child {
-      margin-right: 0; }
     .page-titles a .sponsorpage-imgs {
       display: block;
       margin-top: 2rem; }

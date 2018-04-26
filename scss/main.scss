@@ -442,7 +442,7 @@ form{
 		width: 100%;
 		height: auto;
 		margin-bottom: 2rem;
-		}
+	}
 
 }
 .videosm-container {
@@ -532,7 +532,7 @@ form{
 		}
 	}
 	a {
-		@include span-columns(12);
+		// @include span-columns(12);
 		color: black;
 		.sponsorpage-imgs{
 			@include row;
@@ -785,18 +785,18 @@ form{
 			height: 55px;
 			transition: all 1s;
 		}
-			#mobile-v{
-				background-image: url(../images/logos/social-pnk-01.png);
-				background-repeat: no-repeat;
-				background-position: center;
-				background-size: 72%;
-				background-color: white;
-				border-radius: 100%;
-				border: dotted 1px $color-pink;
-				width: 55px;
-				height: 55px;
-				transition: all 1s;
-			}
+		#mobile-v{
+			background-image: url(../images/logos/social-pnk-01.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 72%;
+			background-color: white;
+			border-radius: 100%;
+			border: dotted 1px $color-pink;
+			width: 55px;
+			height: 55px;
+			transition: all 1s;
+		}
 	}
 	.mobile-tickets{
 		display: flex;
