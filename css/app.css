@@ -171,7 +171,7 @@ html {
   width: 100%;
   text-align: right;
   position: fixed;
-  top: 4.5rem;
+  top: 5rem;
   left: 0;
   display: -webkit-box;
   display: -moz-box;
@@ -202,12 +202,12 @@ html {
       display: none; } }
   #nav-secondary-command .nav-list {
     display: none;
-    margin-right: 12px;
+    margin-right: 14px;
     color: black;
     transition: all 1s; }
     @media screen and (min-width: 1200px) {
       #nav-secondary-command .nav-list {
-        margin-right: 22px;
+        margin-right: 26px;
         transition: all 1s; } }
     #nav-secondary-command .nav-list div {
       padding: .3rem 0;
@@ -221,11 +221,11 @@ html {
           border: 2px dotted #424242;
           background-color: yellow; }
   #nav-secondary-command #about-list {
-    margin-right: 15px;
+    margin-right: 118px;
     transition: all 1s; }
     @media screen and (min-width: 1200px) {
       #nav-secondary-command #about-list {
-        margin-right: 15px;
+        margin-right: 144px;
         transition: all 1s; } }
 
 * {
@@ -681,6 +681,11 @@ form {
         width: 100%; }
         .videosm-container iframe:last-child {
           margin-right: 0; } }
+
+.home-base {
+  color: #eb008b;
+  font-size: 1.2rem;
+  margin-bottom: -1.5rem; }
 
 .page-titles {
   float: left;

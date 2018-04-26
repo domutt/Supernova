@@ -460,6 +460,11 @@ form{
 		}
 	}
 }
+.home-base{
+	color: $color-pink;
+	font-size: 1.2rem;
+	margin-bottom: -1.5rem;
+}
 .page-titles {
 	@include span-columns(12);
 	.profile-image{
