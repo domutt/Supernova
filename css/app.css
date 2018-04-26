@@ -661,26 +661,20 @@ form {
   .videosm-container:last-child {
     margin-right: 0; }
   .videosm-container iframe {
-    text-align: center;
-    margin-left: 17.05961%;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%;
-    height: 350px;
+    border: none;
+    width: 100%;
     margin-top: 1rem;
     margin-bottom: 2rem; }
     .videosm-container iframe:last-child {
       margin-right: 0; }
     @media screen and (max-width: 800px) {
       .videosm-container iframe {
-        margin-left: 0%;
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        .videosm-container iframe:last-child {
-          margin-right: 0; } }
+        margin-top: -2rem;
+        margin-bottom: -2.5rem; } }
 
 .home-base {
   color: #eb008b;
