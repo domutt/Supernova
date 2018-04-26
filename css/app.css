@@ -237,7 +237,7 @@ a {
   text-decoration: none; }
 
 body {
-  font-family: Roboto;
+  font-family: 'Roboto';
   background-image: url(../images/background/yellow-01.png); }
 
 .hidden {
