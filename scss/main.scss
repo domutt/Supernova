@@ -10,7 +10,7 @@ a {
 	text-decoration: none;
 }
 body {
-	font-family: Roboto;
+	font-family: 'Roboto';
 	background-image: url(../images/background/yellow-01.png);
 }
 // #videobg-container{
@@ -442,23 +442,27 @@ form{
 		width: 100%;
 		height: auto;
 		margin-bottom: 2rem;
-		}
+	}
 
 }
 .videosm-container {
 	@include span-columns(12);
 	iframe{
-		text-align: center;
-		@include shift(2);
 		@include span-columns(8);
-		height:  350px;
+		border: none;
+		width: 100%;
 		margin-top: 1rem;
 		margin-bottom: 2rem;
 		@include media(max-width 800px){
-			@include shift(0);
-			@include span-columns(12);
+			margin-top: -2rem;
+			margin-bottom: -2.5rem;
 		}
 	}
+}
+.home-base{
+	color: $color-pink;
+	font-size: 1.2rem;
+	margin-bottom: -1.5rem;
 }
 .page-titles {
 	@include span-columns(12);
@@ -528,7 +532,7 @@ form{
 		}
 	}
 	a {
-		@include span-columns(12);
+		// @include span-columns(12);
 		color: black;
 		.sponsorpage-imgs{
 			@include row;
@@ -781,18 +785,18 @@ form{
 			height: 55px;
 			transition: all 1s;
 		}
-			#mobile-v{
-				background-image: url(../images/logos/social-pnk-01.png);
-				background-repeat: no-repeat;
-				background-position: center;
-				background-size: 72%;
-				background-color: white;
-				border-radius: 100%;
-				border: dotted 1px $color-pink;
-				width: 55px;
-				height: 55px;
-				transition: all 1s;
-			}
+		#mobile-v{
+			background-image: url(../images/logos/social-pnk-01.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 72%;
+			background-color: white;
+			border-radius: 100%;
+			border: dotted 1px $color-pink;
+			width: 55px;
+			height: 55px;
+			transition: all 1s;
+		}
 	}
 	.mobile-tickets{
 		display: flex;

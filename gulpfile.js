@@ -91,6 +91,14 @@ var templateData = {
     schedmenu: ['SCREENINGS', 'EDUCATION'],
     sponsorlinks: [
         {
+          url: '<a href="http://www.denverdigerati.com"   target="_blank">',
+          img: '<img src="images/logos/3.png" alt="Sponsor Logos">'
+        },
+        {
+          url: '<a href="http://www.denvertheatredistrict.com" target="_blank">',
+          img: '<img src="images/logos/4.png" alt="Sponsor Logos">'
+        },
+        {
           url: '<a href="http://artsandvenuesdenver.com" target="_blank">',
           img:'<img src="images/logos/1.png" alt="Sponsor Logos">'
         },
@@ -99,20 +107,32 @@ var templateData = {
           img: '<img src="images/logos/2.png" alt="Sponsor Logos">'
         },
         {
-          url: '<a href="http://www.denverdigerati.com" target="_blank">',
-          img: '<img src="images/logos/3.png" alt="Sponsor Logos">'
+          url: '<a href="https://bonfils-stantonfoundation.org" target="_blank">',
+          img: '<img src="images/logos/16.png" alt="Sponsor Logos">'
         },
         {
-          url: '<a href="http://www.denvertheatredistrict.com" target="_blank">',
-          img: '<img src="images/logos/4.png" alt="Sponsor Logos">'
+          url: '<a href="https://denver.meowwolf.com" target="_blank">',
+          img: '<img src="images/logos/17.png" alt="Sponsor Logos">'
         },
         {
           url: '<a href="http://www.ucdenver.edu/schools/cam/Pages/default.aspx" target="_blank">',
           img: '<img src="images/logos/5.png" alt="Sponsor Logos">'
         },
         {
-          url: '<a href="https://www.leagledenver.com" target="_blank">',
-          img: '<img src="images/logos/7.png" alt="Sponsor Logos">'
+          url: '<a href="http://understudydenver.com" target="_blank">',
+          img: '<img src="images/logos/18.png" alt="Sponsor Logos">'
+        },
+        {
+          url: '<a href="http://moaonline.org" target="_blank">',
+          img: '<img src="images/logos/19.png" alt="Sponsor Logos">'
+        },
+        {
+          url: '<a href="http://coloradofilm.org" target="_blank">',
+          img: '<img src="images/logos/20.png" alt="Sponsor Logos">'
+        },
+        {
+          url: '<a href="http://www.denverfilm.org" target="_blank">',
+          img: '<img src="images/logos/12.png" alt="Sponsor Logos">'
         },
         {
           url: '<a href="http://www.orangebarrelmedia.com/" target="_blank">',
@@ -123,29 +143,9 @@ var templateData = {
           img: '<img src="images/logos/8.png" alt="Sponsor Logos">'
         },
         {
-          url: '<a href="https://www.amongthecolors.com/art/announcing-atc-den" target="_blank">',
-          img: '<img src="images/logos/9.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="http://culturehaus.denverartmuseum.org" target="_blank">',
-          img: '<img src="images/logos/10.png" alt="Sponsor Logos">'
-        },
-        {
           url: '<a href="https://denver.grand.hyatt.com/en/hotel/home.html" target="_blank">',
           img: '<img src="images/logos/14.png" alt="Sponsor Logos">'
         },
-        {
-          url: '<a href="http://www.dmns.org" target="_blank">',
-          img: '<img src="images/logos/11.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="http://www.denverfilm.org" target="_blank">',
-          img: '<img src="images/logos/12.png" alt="Sponsor Logos">'
-        },
-        {
-          url: '<a href="http://www.biennialoftheamericas.org/" target="_blank">',
-          img: '<img src="images/logos/13.png" alt="Sponsor Logos">'
-        }
     ]
 }
 gulp.task('handle', function () {
