@@ -25,41 +25,45 @@
         </div>
         <div id="menu">
             <div id="menu-items">
-                <button id="current-year-button">ABOUT</button>
-                <button id="main-menu-button">SCHEDULE</button>
+                <button id="current-year-button" onclick="toggleSched();" >ABOUT</button>
+                <button href="#" id="main-menu-button" onclick="toggleAbout();">SCHEDULE</button>
             </div>
         </div>
         <div id="banner">
             <marquee id="banner-text" behavior="alternate"> * DENVER OUTDOOR FESTIVAL OF DIGITAL ANIMATION AND ART * FREE  * DENVER OUTDOOR FESTIVAL OF DIGITAL ANIMATION AND ART * FREE  * DENVER OUTDOOR FESTIVAL OF DIGITAL ANIMATION AND ART * FREE * DENVER OUTDOOR FESTIVAL OF DIGITAL ANIMATION AND ART * FREE * DENVER OUTDOOR FESTIVAL OF DIGITAL ANIMATION AND ART * FREE  * DENVER OUTDOOR FESTIVAL OF DIGITAL ANIMATION AND ART * FREE  * DENVER OUTDOOR FESTIVAL OF DIGITAL ANIMATION AND ART * FREE * DENVER OUTDOOR FESTIVAL OF DIGITAL ANIMATION AND ART * FREE * </marquee>
         </div>
-        <div id="page-nav-lists">
-            <div id="current-year" class="nav-lists">
-                {{#each aboutmenu}}
-                <div class="nav-list-container">
-                    <span class="nav-list-item">{{this}}</span>
+        <div id="sub-menu-container">
+            <div id="sub-menu-lists">
+                <div id="menu-1" class="nav-lists">
+                    {{#each aboutmenu}}
+                    <div class="nav-list-container">
+                        <span class="nav-list-item">{{this}}</span>
+                    </div>
+                    {{/each}}
                 </div>
-                {{/each}}
-            </div>
-            <div id="main-menu" class="nav-lists">
-                {{#each schedmenu}}
-                <div class="nav-list-container">
-                    <span class="nav-list-item">{{this}}</span>
+                <div id="menu-2" class="nav-lists">
+                    {{#each schedmenu}}
+                    <div class="nav-list-container">
+                        <span class="nav-list-item">{{this}}</span>
+                    </div>
+                    {{/each}}
                 </div>
-                {{/each}}
             </div>
+
         </div>
-        <!-- <div id="nav-bar"> -->
-        <!-- <img src="images/banner/sp-solid-blk.png" alt="supernova logo" /> -->
-        <!-- <div id="logo-banner"></div>
-        <div id="blurb"><span>{{ blurb }}</span></div>
-        <div id="nav-command">
-        <span id="about-button">{{ about }}</span>
-        <span id="sched-button"> {{ sched }}</span>
     </div>
-    <a id="hamburger-icon" href="#" title="Menu">
-    <span class="line line-1"></span>
-    <span class="line line-2"></span>
-    <span class="line line-3"></span>
+    <!-- <div id="nav-bar"> -->
+    <!-- <img src="images/banner/sp-solid-blk.png" alt="supernova logo" /> -->
+    <!-- <div id="logo-banner"></div>
+    <div id="blurb"><span>{{ blurb }}</span></div>
+    <div id="nav-command">
+    <span id="about-button">{{ about }}</span>
+    <span id="sched-button"> {{ sched }}</span>
+</div>
+<a id="hamburger-icon" href="#" title="Menu">
+<span class="line line-1"></span>
+<span class="line line-2"></span>
+<span class="line line-3"></span>
 </a>
 </div>
 <div id="nav-secondary-command">
@@ -130,7 +134,7 @@ yo
 <div id="footer">
     <span>&copy; 2016 Denver Digerati</span>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="js-prod/main.js"></script>
 <!-- <script type="text/javascript" src="js/app.min.js"></script> -->
 </body>

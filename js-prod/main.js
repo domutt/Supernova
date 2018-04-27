@@ -1,14 +1,75 @@
+function toggleSched() {
+    var mydiv = document.getElementById('menu-1');
+    var otherdiv = document.getElementById('menu-2');
+    if (mydiv.style.display === 'block' || mydiv.style.display === '' && otherdiv.style.display === 'block'){
+
+        mydiv.style.display = 'none';
+        otherdiv.style.display = 'none';
+    }
+    else {
+
+        mydiv.style.display = 'block';
+        otherdiv.style.display = 'none';
+    }
+}
+function toggleAbout() {
+    var mydiv = document.getElementById('menu-2');
+    var otherdiv = document.getElementById('menu-1');
+    if (mydiv.style.display === 'block' || mydiv.style.display === '' && otherdiv.style.display === 'block') {
+        mydiv.style.display = 'none';
+        otherdiv.style.display = 'none';
+
+    }
+
+    else {
+        mydiv.style.display = 'block'
+        otherdiv.style.display = 'none';
+
+    }
+}
+
+// var box = document.querySelector(".box");
+// document.addEventListener("click", function(event) {
+//     var mydiv = document.getElementById('main-menu');
+//     var otherdiv = document.getElementById('current-year');
+//     console.log("hey there");
+//     if (mydiv.style.display === 'block' || otherdiv.style.display === 'block' ) {
+//         otherdiv.style.display = 'none';
+//         mydiv.style.display = 'none';
+//     }
+// });
+// Detect all clicks on the document
+// document.addEventListener("click", function(event) {
+//
+//     // If user clicks inside the element, do nothing
+//     if (event.target.closest(".box")) return;
+//
+//     // If user clicks outside the element, hide it!
+//     box.classList.add("js-is-hidden");
+// });
+
+
+
+// JQuery
 $(document).ready( function() {
-// $('#main-menu').hide();
-// $('#current-year').hide();
-    $('#current-year-button button').on('click', function(){
-        $('#current-year').show();
-        $('#main-menu').hide();
-    });
-    $('#main-menu-button button').on('click', function(){
-        $('#main-menu').show();
-        $('#current-year').hide();
-    });
+        // $("#page-nave-lists").hide();
+
+
+
+
+// $("#current-year-button").click( function() {
+//
+//     console.log("YO");
+//     console.log('HEY');
+//     $("#page-nav-lists").hide();
+// });
+// $('#main-menu-button').hide();
+// $('#current-year-button').hide();
+    // $("#current-year-button").show();
+    // $("#current-year").hide();
+    // $("#current-year-button button").click(function() {
+	// 		$("#current-year").show();
+	// 	});
     // $('#enter-sp').on('click', function(){
     //     $('.vid-controller').fadeOut(400, function(){
     //         $(this).remove();
@@ -74,7 +135,7 @@ $(document).ready( function() {
             education.fadeIn(1000);
         }
     });
-    $('#about-list div').on('click', function() {
+    $('#main-menu-button button').on('click', function() {
         var index = $(this).index();
         home.hide();
         allSched.hide();
