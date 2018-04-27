@@ -1,3 +1,18 @@
+$(window).on('load', function() {
+    var headerEl = document.getElementById('page-header');
+    var headPositionInfo = headerEl.getBoundingClientRect();
+    var bottomOfHead = headPositionInfo.bottom;
+
+    // var pageEl = document.getElementById('page-container');
+    // var pagePositionInfo = pageEl.getBoundingClientRect();
+    // var topOfPage = pagePositionInfo.top;
+
+    var changeTopPos = $("#page-container");
+    changeTopPos.css({
+        top: bottomOfHead + "px"
+    });
+
+});
 function toggleSched() {
     var mydiv = document.getElementById('menu-1');
     var otherdiv = document.getElementById('menu-2');
@@ -18,41 +33,26 @@ function toggleAbout() {
     if (mydiv.style.display === 'block' || mydiv.style.display === '' && otherdiv.style.display === 'block') {
         mydiv.style.display = 'none';
         otherdiv.style.display = 'none';
-
     }
-
     else {
         mydiv.style.display = 'block'
         otherdiv.style.display = 'none';
-
     }
 }
-
-// var box = document.querySelector(".box");
-// document.addEventListener("click", function(event) {
-//     var mydiv = document.getElementById('main-menu');
-//     var otherdiv = document.getElementById('current-year');
-//     console.log("hey there");
-//     if (mydiv.style.display === 'block' || otherdiv.style.display === 'block' ) {
-//         otherdiv.style.display = 'none';
-//         mydiv.style.display = 'none';
-//     }
-// });
-// Detect all clicks on the document
-// document.addEventListener("click", function(event) {
-//
-//     // If user clicks inside the element, do nothing
-//     if (event.target.closest(".box")) return;
-//
-//     // If user clicks outside the element, hide it!
-//     box.classList.add("js-is-hidden");
-// });
-
-
 
 // JQuery
 $(document).ready( function() {
         // $("#page-nave-lists").hide();
+        $(window).resize(function() {
+            var headerEl = document.getElementById('page-header');
+            var positionInfo = headerEl.getBoundingClientRect();
+            var bottom = positionInfo.bottom;
+            var changeTopPos = $("#page-container");
+            console.log("Bottom: " +  bottom);
+            changeTopPos.css({
+                top: bottom + "px"
+            });
+        });
 
 
 

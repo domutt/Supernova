@@ -1,5 +1,5 @@
 #page-header {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top: -25px;
     right: 0;
@@ -12,19 +12,19 @@
     transition: all .2s;
     @include media(max-width 1400px){
         top: -18px;
-        transition: all .5s;
+        transition: all 1s;
     }
     @include media(max-width 1000px){
         top: -12px;
-        transition: all .5s;
+        transition: all 1s;
     }
     @include media(max-width 700px){
         top: -8px;
-        transition: all .5s;
+        transition: all 1s;
     }
     @include media(max-width 450px){
         top: -5px;
-        transition: all .5s;
+        transition: all 1s;
     }
     #supernova-image {
         background: linear-gradient( to bottom, $color-lightest, transparent);
@@ -88,28 +88,28 @@
         }
     }
     // ----- Page Navigation Menus ------- //
-    #sub-menu-container {
-        position: relative;
-        font-size: 1.4rem;
-        font-weight: 200;
-        width: 100%;
-        margin-top: 1rem;;
-        #sub-menu-lists {
-            float:right;
-            .nav-lists {
-                margin-bottom: 1px;
-                .nav-list-container{
-                    height: 30px;
-                    text-align: right;
-                    .nav-list-item {
-                        // margin: 20px;
-                        border: 1px dotted #000;
-                        color: $color-dark;
-                        padding: .2rem .7rem;
-                        background-color: $color-lightest;
-                        &:hover{
-                            background: linear-gradient( $color-lightest,$color-lighter);
-                        }
+}
+#sub-menu-container {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 200;
+    width: 100%;
+    margin-top: 1rem;;
+    #sub-menu-lists {
+        float:right;
+        .nav-lists {
+            margin-bottom: 1px;
+            .nav-list-container{
+                height: 30px;
+                text-align: right;
+                .nav-list-item {
+                    // margin: 20px;
+                    border: 1px dotted #000;
+                    color: $color-dark;
+                    padding: .2rem .7rem;
+                    background-color: $color-lightest;
+                    &:hover{
+                        background: linear-gradient( $color-lightest,$color-lighter);
                     }
                 }
             }
