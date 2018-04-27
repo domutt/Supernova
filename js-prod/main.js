@@ -1,21 +1,23 @@
 $(document).ready( function() {
-    $('#nav-command').on('click','#about-button', function(){
-        $('#about-list').fadeToggle();
-        $('#sched-list').hide();
+// $('#main-menu').hide();
+// $('#current-year').hide();
+    $('#current-year-button button').on('click', function(){
+        $('#current-year').show();
+        $('#main-menu').hide();
     });
-    $('#nav-command').on('click','#sched-button', function(){
-        $('#sched-list').fadeToggle();
-        $('#about-list').hide();
+    $('#main-menu-button button').on('click', function(){
+        $('#main-menu').show();
+        $('#current-year').hide();
     });
-    $('#enter-sp').on('click', function(){
-        $('.vid-controller').fadeOut(400, function(){
-            $(this).remove();
-        });
-        $('#videobg').animate({opacity: 0 }, 800).delay(1000, "fx").queue("fx", function (next) {
-            $('#videobg-container').remove();
-            next();
-        });
-    });
+    // $('#enter-sp').on('click', function(){
+    //     $('.vid-controller').fadeOut(400, function(){
+    //         $(this).remove();
+    //     });
+    //     $('#videobg').animate({opacity: 0 }, 800).delay(1000, "fx").queue("fx", function (next) {
+    //         $('#videobg-container').remove();
+    //         next();
+    //     });
+    // });
     var container = $('#loaded-content');
     // $('.juror-img').on('click', function() {
     //     var index = $(this).index();
