@@ -11,39 +11,48 @@ $(window).on('load', function() {
     changeTopPos.css({
         top: bottomOfHead + "px"
     });
-
 });
-function toggleSched() {
-    var mydiv = document.getElementById('menu-1');
-    var otherdiv = document.getElementById('menu-2');
-    if (mydiv.style.display === 'block' || mydiv.style.display === '' && otherdiv.style.display === 'block'){
+function toggleAbout() {
+    var mydiv = document.getElementById('menu-2');
+    // var otherdiv = document.getElementById('menu-2');
+    if (mydiv.style.display === 'block' || mydiv.style.display === ''
+    // && otherdiv.style.display === 'block'
+){
 
         mydiv.style.display = 'none';
-        otherdiv.style.display = 'none';
+        // otherdiv.style.display = 'none';
     }
     else {
 
         mydiv.style.display = 'block';
-        otherdiv.style.display = 'none';
+        // otherdiv.style.display = 'none';
     }
 }
-function toggleAbout() {
+function toggleMenu() {
     var mydiv = document.getElementById('menu-2');
     var otherdiv = document.getElementById('menu-1');
-    if (mydiv.style.display === 'block' || mydiv.style.display === '' && otherdiv.style.display === 'block') {
+    if (mydiv.style.display === 'block' || mydiv.style.display === '') {
         mydiv.style.display = 'none';
-        otherdiv.style.display = 'none';
+//         otherdiv.style.display = 'none';
     }
     else {
-        mydiv.style.display = 'block'
-        otherdiv.style.display = 'none';
+        mydiv.style.display = 'none'
+//         otherdiv.style.display = 'none';
     }
 }
 
 // JQuery
 $(document).ready( function() {
+
         // $("#page-nave-lists").hide();
         $(window).resize(function() {
+
+            var video = document.getElementById('frame');
+            var vidPosition = video.getBoundingClientRect();
+            var height = vidPosition.height;
+            console.log("Video box height: " + height);
+
+
             var headerEl = document.getElementById('page-header');
             var positionInfo = headerEl.getBoundingClientRect();
             var bottom = positionInfo.bottom;
