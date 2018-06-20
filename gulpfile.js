@@ -87,8 +87,8 @@ var templateData = {
     blurb: 'OUTDOOR FESTIVAL OF DIGITAL ANIMATION AND ART',
     about: 'ABOUT',
     sched: 'SCHEDULE',
-    aboutmenu: ['SCHEDULE | MAP', 'JURORS', 'TEAM', 'HISTORY', 'PRESS'],
-    schedmenu: ['SCHEDULE | MAP', 'JURORS', 'TEAM', 'HISTORY', 'PRESS'],
+    aboutmenu: ['SCHEDULE | MAP', 'JURORS', 'TEAM','SPONSORS', 'HISTORY', 'PRESS'],
+    schedmenu: ['SCHEDULE | MAP', 'JURORS', 'TEAM','SPONSORS', 'HISTORY', 'PRESS'],
     sponsorlinks: [
         {
           url: '<a href="http://www.denverdigerati.com"   target="_blank">',
