@@ -113,7 +113,7 @@
         z-index: -9999;
         position: relative;
         max-width: 1920px;
-        width: 100%;
+        width: 101%;
 
         margin-top: -6.4rem;
         @include media(max-width 820px){
@@ -121,6 +121,7 @@
             transition: all 1s;
         }
         marquee {
+            margin-left: -4px;
             padding: 4px;
             width: 1920px;
             font-size: 15px;

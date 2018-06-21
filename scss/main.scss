@@ -7,23 +7,16 @@
     position: relative;
     z-index: 0;
     right: 0;
-    top: 14rem;
+    top: 0;
     left:0;
     margin: auto;
     width: 100%;
     height: auto;
     max-width: 1920px;
-    // background: linear-gradient( to bottom, rgba(255,255,0,0), $color-lighter);
     #home-page {
-        position: relative;
-        width: 100%;
-        height: auto;
     }
     #sched-map {
         display: none;
-        position: relative;
-        width: 100%;
-        height: auto;
     }
     #jurors-page {
         display: none;
@@ -44,12 +37,22 @@
         display: none;
     }
 }
+.full-image {
+    width: 100%;
+    height: auto;
+    box-shadow: inset 1px 4px 9px -6px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
 
 .inner-container {
     position: relative;
     width:100%;
     height: auto;
 }
+// NEW HOME PAGE
 
 .line-break {
     margin: 40px auto;

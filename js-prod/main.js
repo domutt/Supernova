@@ -1,23 +1,24 @@
 
+// JQuery
+
 $(window).on('load', function() {
-    var headerEl = document.getElementById('page-header');
+    var headerEl = document.getElementById('banner');
     var headPositionInfo = headerEl.getBoundingClientRect();
     var bottomOfHead = headPositionInfo.bottom;
+    // console.log("Bottom: " +  bottomOfHead);
     var changeTopPos = $("#page-container");
     changeTopPos.css({
         top: bottomOfHead + "px"
     });
 });
-
-// JQuery
 $(document).ready( function() {
 // keep content below header //
     $(window).resize(function() {
-        var video = document.getElementById('frame');
-        var vidPosition = video.getBoundingClientRect();
-        var height = vidPosition.height;
-        console.log("Video box height: " + height);
-        var headerEl = document.getElementById('page-header');
+        // var video = document.getElementById('frame');
+        // var vidPosition = video.getBoundingClientRect();
+        // var height = vidPosition.height;
+        // console.log("Video box height: " + height);
+        var headerEl = document.getElementById('banner');
         var positionInfo = headerEl.getBoundingClientRect();
         var bottom = positionInfo.bottom;
         var changeTopPos = $("#page-container");
