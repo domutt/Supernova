@@ -42,7 +42,7 @@ gulp.task('concatScripts', function(){
   .pipe(maps.init())
   .pipe(concat('app.js'))
   .pipe(maps.write('../maps')) // source map for debugging
-  .pipe(gulp.dest('js'))
+  .pipe(gulp.dest('js'));
 });
 
 //=======================================
@@ -55,7 +55,7 @@ gulp.task('minifyScripts', ['concatScripts'], function(){
   .pipe(uglify())
   // rename file to app.min.js
   .pipe(rename('app.min.js'))
-  .pipe(gulp.dest('js'))
+  .pipe(gulp.dest('js'));
 });
 
 //=======================================
@@ -66,14 +66,13 @@ gulp.task('compileSass', function(){
     return gulp.src('scss/**/*.scss')
     .pipe(maps.init())
     .pipe(sass({
-        includePaths: bourbon,
-        includePaths: neat
+        includePaths: bourbon
       }))
 	.pipe(autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
     .pipe(maps.write('../maps')) // source map for debugging
     .pipe(rename('app.css'))
     .pipe(gulp.dest('css'))
-    .pipe(browserSync.stream())
+    .pipe(browserSync.stream());
 });
 
 gulp.task('minifyCss', ['compileSass'], function () {
@@ -147,7 +146,7 @@ var templateData = {
           img: '<img src="images/logos/14.png" alt="Sponsor Logos">'
         },
     ]
-}
+};
 gulp.task('handle', function () {
     return gulp.src('templates/layout.handlebars')
         .pipe(handlebars(templateData))
@@ -167,7 +166,7 @@ gulp.task('watchFiles', function(){
     });
 
     gulp.watch('scss/**/*.scss', ['compileSass'], browserSync.reload);
-    gulp.watch('js/app.js', ['concatScripts'], browserSync.reload);
+    gulp.watch('js-prod/main.js', ['concatScripts'], browserSync.reload);
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('templates/**/*.handlebars', ['handle'], browserSync.reload);
 });
@@ -184,7 +183,7 @@ gulp.task('clean', function(){
 //=======================================
 gulp.task('build', ['minifyScripts', 'minifyCss', 'handle'], function(){
     return gulp.src(['css/app.min.css', 'js/app.min.js', 'index.html', 'images/**', 'fonts/**', 'pages/**'], { base: './' })
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dist'));
 });
 
 

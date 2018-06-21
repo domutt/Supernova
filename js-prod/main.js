@@ -30,7 +30,7 @@ $(document).ready( function() {
 // keep content below header //
     $("#current-year-button").click(function(){
         $("#sub-menu-list").fadeOut(function(){
-            $("#home-page").hide();
+            // $("#home-page").hide();
             $("#jurors-page").hide();
             $("#team-page").hide();
             $("#sponsors-page").hide();
