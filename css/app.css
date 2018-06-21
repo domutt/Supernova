@@ -18,7 +18,7 @@ html {
 body {
   font-family: 'Roboto';
   z-index: -9999;
-  background: url(../images/background/yellow-01.png) repeat top left; }
+  background: black; }
 
 h1 {
   margin-left: 2.8rem;
@@ -184,7 +184,7 @@ a {
 #page-header {
   position: fixed;
   z-index: 1;
-  top: -25px;
+  top: 0;
   right: 0;
   left: 0;
   margin: auto;
@@ -192,27 +192,7 @@ a {
   height: auto;
   overflow: hidden;
   max-width: 1920px;
-  transition: all .2s;
-  margin-bottom: 1rem; }
-  @media screen and (min-width: 1920px) {
-    #page-header {
-      overflow: visible; } }
-  @media screen and (max-width: 1400px) {
-    #page-header {
-      top: -18px;
-      transition: all 1s; } }
-  @media screen and (max-width: 1000px) {
-    #page-header {
-      top: -12px;
-      transition: all 1s; } }
-  @media screen and (max-width: 700px) {
-    #page-header {
-      top: -8px;
-      transition: all 1s; } }
-  @media screen and (max-width: 450px) {
-    #page-header {
-      top: -5px;
-      transition: all 1s; } }
+  transition: all .2s; }
   #page-header #supernova-image {
     position: relative;
     z-index: -9999;
@@ -224,99 +204,113 @@ a {
       width: 100%;
       background-color: rgba(255, 255, 255, 0.98);
       padding-bottom: 15px; }
+      @media screen and (max-width: 1024px) {
+        #page-header #supernova-image img {
+          transition: all 1s;
+          width: 110%;
+          margin-left: -5%; } }
+      @media screen and (max-width: 700px) {
+        #page-header #supernova-image img {
+          transition: all 1s;
+          width: 130%;
+          margin-left: -15%; } }
+      @media screen and (max-width: 420px) {
+        #page-header #supernova-image img {
+          transition: all 1s;
+          width: 140%;
+          margin-left: -20%; } }
   #page-header #menu {
     z-index: 9999;
-    margin-top: -6.25rem;
+    margin-top: -6.75rem;
     width: 100%;
-    height: 100%;
+    height: auto;
     float: right; }
+    @media screen and (max-width: 820px) {
+      #page-header #menu {
+        margin-top: -4rem;
+        transition: all 1s; } }
     #page-header #menu #menu-items {
       float: right;
-      margin-top: .3rem;
       margin-right: 1rem; }
       #page-header #menu #menu-items button {
         padding: .2rem .7rem;
         margin-left: .7rem;
         letter-spacing: 1.8px;
-        font-size: 30px;
+        font-size: 26px;
         font-weight: 200;
-        border: 1px dotted #4C4C4C;
+        border: 1px dotted white;
         color: #4C4C4C;
         background-color: white; }
         #page-header #menu #menu-items button:hover {
-          background: linear-gradient(white, yellow);
           color: #eb008b;
-          border: 1px dotted #4C4C4C; }
-        #page-header #menu #menu-items button:active {
-          background-color: yellow; }
+          border: 1px solid #000; }
         @media screen and (max-width: 1280px) {
           #page-header #menu #menu-items button {
-            font-size: 24px; } }
+            font-size: 24px;
+            transition: all 1s; } }
         @media screen and (max-width: 820px) {
           #page-header #menu #menu-items button {
-            font-size: 18px; } }
+            font-size: 18px;
+            transition: all 1s; } }
   #page-header #banner {
     z-index: -9999;
     position: relative;
     max-width: 1920px;
     width: 100%;
-    margin-top: -5.5rem; }
+    margin-top: -6.4rem; }
     @media screen and (max-width: 820px) {
       #page-header #banner {
-        margin-top: -5.6rem; } }
+        margin-top: -6.5rem;
+        transition: all 1s; } }
     #page-header #banner marquee {
       padding: 4px;
       width: 1920px;
-      font-size: 16px;
+      font-size: 15px;
       background-color: #eb008b;
+      font-weight: 800;
       letter-spacing: 4px;
-      color: yellow;
-      border: 1px dotted #4C4C4C;
+      color: white;
+      border: 1px solid white;
       white-space: nowrap;
       text-overflow: clip; }
-      @media screen and (max-width: 1280px) {
-        #page-header #banner marquee {
-          font-size: 11px; } }
-      @media screen and (max-width: 820px) {
-        #page-header #banner marquee {
-          font-size: 9px; } }
 
 #sub-menu-container {
-  position: relative;
-  font-size: 1.6rem;
-  font-weight: 200;
-  width: 100%;
-  margin-top: 1rem; }
-  @media screen and (max-width: 1280px) {
-    #sub-menu-container {
-      font-size: 24px; } }
-  @media screen and (max-width: 820px) {
-    #sub-menu-container {
-      font-size: 18px; } }
+  width: 100%; }
   #sub-menu-container #sub-menu-list {
+    position: relative;
+    font-size: 24px;
+    font-weight: 200;
+    margin-top: -54px;
     float: right; }
-    #sub-menu-container #sub-menu-list .nav-lists {
+    @media screen and (max-width: 1280px) {
+      #sub-menu-container #sub-menu-list {
+        margin-top: 14px; } }
+    @media screen and (max-width: 820px) {
+      #sub-menu-container #sub-menu-list {
+        margin-top: -22px;
+        font-size: 18px;
+        transition: all 1s; } }
+    #sub-menu-container #sub-menu-list #sub-menu {
       margin-top: 0.25rem; }
-      @media screen and (max-width: 820px) {
-        #sub-menu-container #sub-menu-list .nav-lists {
-          margin-top: 0; } }
-      #sub-menu-container #sub-menu-list .nav-lists .nav-list-container {
+      #sub-menu-container #sub-menu-list #sub-menu .nav-list-container {
         margin-bottom: .75rem;
         height: 40px;
         text-align: right; }
         @media screen and (max-width: 820px) {
-          #sub-menu-container #sub-menu-list .nav-lists .nav-list-container {
-            margin-bottom: 0; } }
-        #sub-menu-container #sub-menu-list .nav-lists .nav-list-container .nav-list-item {
-          border: 1px dotted #000;
+          #sub-menu-container #sub-menu-list #sub-menu .nav-list-container {
+            margin-bottom: 0;
+            transition: all 1s; } }
+        #sub-menu-container #sub-menu-list #sub-menu .nav-list-container .nav-list-item {
+          border: 1px dotted white;
           color: #4C4C4C;
           padding: .2rem .7rem;
-          background-color: yellow; }
-          #sub-menu-container #sub-menu-list .nav-lists .nav-list-container .nav-list-item:hover {
-            background: linear-gradient(yellow, white); }
+          background-color: white; }
+          #sub-menu-container #sub-menu-list #sub-menu .nav-list-container .nav-list-item:hover {
+            color: #eb008b;
+            border: 1px solid #000; }
 
 #sub-menu-list {
-  margin-right: 1rem;
+  margin-right: 16px;
   display: none; }
 
 #page-container {
