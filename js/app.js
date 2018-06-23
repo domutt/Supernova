@@ -2,6 +2,7 @@
 // JQuery
 
 $(window).on('load', function() {
+
     var headerEl = document.getElementById('banner');
     var headPositionInfo = headerEl.getBoundingClientRect();
     var bottomOfHead = headPositionInfo.bottom;
@@ -10,7 +11,19 @@ $(window).on('load', function() {
     changeTopPos.css({
         top: bottomOfHead + "px"
     });
+    $('#overlay').delay(1000).fadeOut(function (){
+    });
+    // $('#page-header').fadeIn(function(){
+    // });
+
+    // $('#page-container').fadeIn();
+
+
+
+
+
 });
+
 $(document).ready( function() {
 // keep content below header //
     $(window).resize(function() {
@@ -22,10 +35,17 @@ $(document).ready( function() {
         var positionInfo = headerEl.getBoundingClientRect();
         var bottom = positionInfo.bottom;
         var changeTopPos = $("#page-container");
-        console.log("Bottom: " +  bottom);
         changeTopPos.css({
             top: bottom + "px"
         });
+
+        // var programEl = document.getElementsByClassName('program');
+        // var programBase = programEl.getBoundingClientRect();
+        // var bottomOfProgram = programBase.bottom;
+        // var changeImagePos = $(".award-image");
+        // changeImagePos.css({
+        //     bottom: bottomOfProgram + "px"
+        // });
     });
 // keep content below header //
     $("#current-year-button").click(function(){

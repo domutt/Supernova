@@ -4,6 +4,7 @@
 @import 'header-nav';
 
 #page-container {
+    // display: none;
     position: relative;
     z-index: 0;
     right: 0;
@@ -12,7 +13,8 @@
     margin: auto;
     width: 100%;
     height: auto;
-    max-width: 1920px;
+    max-width: 1440px;
+    // overflow: hidden;
     #home-page {
     }
     #sched-map {
@@ -37,6 +39,7 @@
         display: none;
     }
 }
+// START - NEW HOME PAGE
 .full-image {
     margin-top: -15px;
     width: 100%;
@@ -47,13 +50,207 @@
         height: auto;
     }
 }
+.returning {
+    margin: 50px 0;
+    width: 100%;
+    height: auto;
+    box-shadow: inset 1px 4px 9px -6px;
+    img {
+        margin-left: 25%;
+        width: 50%;
+        height: auto;
+    }
+}
+.programing {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-bottom: 50px;
+    .large-heading {
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+        }
+    }
+    .top-margin {
+        margin-top: 50px;
+    }
+}
+#program {
+    width:100%;
+    display: flex;
+    margin: 50px 0;
+    background: url("../images/new-homepage/sn-award.png") no-repeat bottom;
+    background-size: 59%;
+
+    .p-columns {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+    #left-p {
+        margin-right: 4%;
+    }
+    #right-p {
+        margin-left: 4%;
+    }
+}
+.smedia-links {
+    width:100%;
+    display: flex;
+    overflow: hidden;
+    // margin-bottom: 50px;;
+    .s-link {
+        width: 25%;
+        margin: 0px;;
+        padding: 0;
+        border: 0;
+        // overflow: hidden;
+        img {
+            width: 102%;
+        }
+    }
+    #vimeo-l {
+    background: url( "../images/new-homepage/v-image.png") no-repeat center;
+    background-size: 91%;
+    transition: all .2s;
+    &:hover{
+        background-size: 99%;
+        transition: all .2s;
+    }
+
+    }
+    #digerati-l {
+        // border: 1px solid #000;
+    background: url( "../images/new-homepage/d-image.png") no-repeat center;
+    background-size: 91%;
+    transition: all .2s;
+    &:hover{
+        background-size: 99%;
+        transition: all .2s;
+    }
+    }
+    #facebook-l {
+    background: url( "../images/new-homepage/f-image.png") no-repeat center;
+    background-size: 91%;
+    transition: all .2s;
+    &:hover{
+        background-size: 99%;
+        transition: all .2s;
+    }
+    }
+    #intsta-l {
+    background: url( "../images/new-homepage/i-image.png") no-repeat center;
+    background-size: 91%;
+    transition: all .2s;
+    &:hover{
+        background-size: 100%;
+        transition: all .2s;
+    }
+    }
+}
+.main-vid {
+    margin-top: -6px;;
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // overflow: auto;
+    // display: block;
+    // clear: both;
+
+    .vid-container {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 56.25%; /* 16:9 */
+        // padding-top: 25px;
+        height: 0;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .frame-vid {
+        z-index: 9999;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        img {
+            width: 100%;
+        }
+    }
+}
+.more-info {
+    margin-top: 800px;;
+    width: 100%;
+    height: 400px;
+    background-color: red;
+}
+.main-jurors {
+    margin-top: -2px;;
+    margin-bottom: 50px;;
+    display: flex;
+    flex-direction: row;
+    border-top: solid black 5px;
+    .the-jurors{
+        width: 33.3339%;
+        img {
+            width: 101%;
+        }
+    }
+    #juror-max {
+        background: url( "../images/MaxHattler.png") no-repeat center;
+        background-size: 91%;
+        transition: all .2s;
+        &:hover {
+            background-size: 99%;
+            transition: all .2s;
+        }
+    }
+    #juror-robert {
+        background: url( "../images/RobertSeidel.png") no-repeat center;
+        background-size: 91%;
+        transition: all .2s;
+        &:hover {
+            background-size: 99%;
+            transition: all .2s;
+        }
+    }
+    #juror-katie {
+        background: url( "../images/KatieTorn.png") no-repeat center;
+        background-size: 91%;
+        transition: all .2s;
+        &:hover {
+            background-size: 99%;
+            transition: all .2s;
+        }
+    }
+}
+.sponsors-partners {
+    width: 100%;
+    // margin-left: 15%;
+    background-color: $color-lightest;
+
+}
+// END -- NEW HOME PAGE
 
 .inner-container {
     position: relative;
     width:100%;
     height: auto;
 }
-// NEW HOME PAGE
 
 .line-break {
     margin: 40px auto;

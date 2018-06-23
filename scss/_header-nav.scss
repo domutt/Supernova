@@ -1,4 +1,5 @@
 #page-header {
+    // display: none;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -8,7 +9,7 @@
     width: 100%;
     height: auto;
     overflow: hidden;
-    max-width: 1920px;
+    max-width: 1440px;
     transition: all .2s;
     // margin-bottom: 1rem;
     // @include media(min-width 1920px){

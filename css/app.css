@@ -10,6 +10,25 @@ html {
   font-weight: normal;
   src: url("/fonts/polya-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/polya-webfont.woff2") format("woff2"), url("/fonts/polya-webfont.woff") format("woff"), url("/fonts/polya-webfont.ttf") format("truetype"), url("/fonts/polya-webfont.svg#polya-webfont") format("svg"); }
 
+#overlay {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 110vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000; }
+  #overlay .loader {
+    font-size: 36px;
+    color: white; }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -191,7 +210,7 @@ a {
   width: 100%;
   height: auto;
   overflow: hidden;
-  max-width: 1920px;
+  max-width: 1440px;
   transition: all .2s; }
   #page-header #supernova-image {
     position: relative;
@@ -324,7 +343,7 @@ a {
   margin: auto;
   width: 100%;
   height: auto;
-  max-width: 1920px; }
+  max-width: 1440px; }
   #page-container #sched-map {
     display: none; }
   #page-container #jurors-page {
@@ -348,6 +367,172 @@ a {
   .full-image img {
     width: 100%;
     height: auto; }
+
+.returning {
+  margin: 50px 0;
+  width: 100%;
+  height: auto;
+  box-shadow: inset 1px 4px 9px -6px; }
+  .returning img {
+    margin-left: 25%;
+    width: 50%;
+    height: auto; }
+
+.programing {
+  width: 70%;
+  height: auto;
+  margin-left: 15%;
+  margin-bottom: 50px; }
+  .programing .large-heading {
+    width: 100%;
+    height: auto; }
+    .programing .large-heading img {
+      width: 100%; }
+  .programing .top-margin {
+    margin-top: 50px; }
+
+#program {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0;
+  background: url("../images/new-homepage/sn-award.png") no-repeat bottom;
+  background-size: 59%; }
+  #program .p-columns {
+    width: 50%; }
+    #program .p-columns img {
+      width: 100%; }
+  #program #left-p {
+    margin-right: 4%; }
+  #program #right-p {
+    margin-left: 4%; }
+
+.smedia-links {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+  .smedia-links .s-link {
+    width: 25%;
+    margin: 0px;
+    padding: 0;
+    border: 0; }
+    .smedia-links .s-link img {
+      width: 102%; }
+  .smedia-links #vimeo-l {
+    background: url("../images/new-homepage/v-image.png") no-repeat center;
+    background-size: 91%;
+    transition: all .2s; }
+    .smedia-links #vimeo-l:hover {
+      background-size: 99%;
+      transition: all .2s; }
+  .smedia-links #digerati-l {
+    background: url("../images/new-homepage/d-image.png") no-repeat center;
+    background-size: 91%;
+    transition: all .2s; }
+    .smedia-links #digerati-l:hover {
+      background-size: 99%;
+      transition: all .2s; }
+  .smedia-links #facebook-l {
+    background: url("../images/new-homepage/f-image.png") no-repeat center;
+    background-size: 91%;
+    transition: all .2s; }
+    .smedia-links #facebook-l:hover {
+      background-size: 99%;
+      transition: all .2s; }
+  .smedia-links #intsta-l {
+    background: url("../images/new-homepage/i-image.png") no-repeat center;
+    background-size: 91%;
+    transition: all .2s; }
+    .smedia-links #intsta-l:hover {
+      background-size: 100%;
+      transition: all .2s; }
+
+.main-vid {
+  margin-top: -6px;
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .main-vid .vid-container {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0; }
+    .main-vid .vid-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .main-vid .frame-vid {
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; }
+    .main-vid .frame-vid img {
+      width: 100%; }
+
+.more-info {
+  margin-top: 800px;
+  width: 100%;
+  height: 400px;
+  background-color: red; }
+
+.main-jurors {
+  margin-top: -2px;
+  margin-bottom: 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-top: solid black 5px; }
+  .main-jurors .the-jurors {
+    width: 33.3339%; }
+    .main-jurors .the-jurors img {
+      width: 101%; }
+  .main-jurors #juror-max {
+    background: url("../images/MaxHattler.png") no-repeat center;
+    background-size: 91%;
+    transition: all .2s; }
+    .main-jurors #juror-max:hover {
+      background-size: 99%;
+      transition: all .2s; }
+  .main-jurors #juror-robert {
+    background: url("../images/RobertSeidel.png") no-repeat center;
+    background-size: 91%;
+    transition: all .2s; }
+    .main-jurors #juror-robert:hover {
+      background-size: 99%;
+      transition: all .2s; }
+  .main-jurors #juror-katie {
+    background: url("../images/KatieTorn.png") no-repeat center;
+    background-size: 91%;
+    transition: all .2s; }
+    .main-jurors #juror-katie:hover {
+      background-size: 99%;
+      transition: all .2s; }
+
+.sponsors-partners {
+  width: 100%;
+  background-color: white; }
 
 .inner-container {
   position: relative;

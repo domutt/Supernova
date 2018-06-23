@@ -24,6 +24,23 @@ $color-light-bg: #DADADA;
 //*********************************
 // Universal  *********************
 //*********************************
+#overlay {
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	height: 110vh;
+	display: flex;
+	justify-content: center;
+	// align-content: center;
+	align-items: center;
+	background-color: $color-darkest;
+	.loader {
+		// width: 100%;
+		// height: 100%;
+		font-size: 36px;
+		color: $color-lightest;
+	}
+}
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -32,6 +49,7 @@ $color-light-bg: #DADADA;
 body {
 	font-family: 'Roboto';
 	z-index: -9999;
+	// display: none;
 	// @include background-image(url(../images/background/yellow-01.png));
 	background: black;
 	// align: "center";
