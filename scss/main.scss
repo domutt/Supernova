@@ -51,7 +51,7 @@
     }
 }
 .returning {
-    margin: 50px 0;
+    margin-top: 3% ;
     width: 100%;
     height: auto;
     box-shadow: inset 1px 4px 9px -6px;
@@ -65,7 +65,8 @@
     width: 70%;
     height: auto;
     margin-left: 15%;
-    margin-bottom: 50px;
+    margin-bottom: 3%;
+    margin-top: 3%;
     .large-heading {
         width: 100%;
         height: auto;
@@ -74,13 +75,13 @@
         }
     }
     .top-margin {
-        margin-top: 50px;
+        margin-top: 3%;
     }
 }
 #program {
     width:100%;
     display: flex;
-    margin: 50px 0;
+    margin: 4% 0;
     background: url("../images/new-homepage/sn-award.png") no-repeat bottom;
     background-size: 59%;
 
@@ -163,6 +164,7 @@
     // overflow: auto;
     // display: block;
     // clear: both;
+    margin-bottom: 870px;
 
     .vid-container {
         position: absolute;
@@ -193,14 +195,76 @@
     }
 }
 .more-info {
-    margin-top: 800px;;
+    margin: 3% 0;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 400px;
-    background-color: red;
+    // height: 400px;
+    background: url( "../images/new-homepage/comp-award.png") no-repeat bottom right, #040707;
+    background-size: auto 100%;
+    .left-just-head {
+        margin-left: 5%;
+        width: 75%;
+        // padding-bottom: 40px;
+        img{
+            width: 100%;;
+            // min-width: 60%;
+        }
+    }
+    .left-just-active {
+        width: 100%;
+        display: flex;
+        // flex-direction: row;
+        // align-items: center;
+        // clear: both;
+        // padding-bottom: 4%;
+        padding-top: 4%;;
+        .ff-button {
+            background: $color-light;
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 2%;
+            padding: 0 3%;
+            .ff-outer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // text-align: center;
+                width: 100%;
+                img {
+                    width: 100%;
+                    transition: .2s all;
+                    &:hover {
+                        width: 105%;
+                    }
+                }
+            }
+        }
+        .cash-prizes {
+            width: 52%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .comp-awards-det {
+        margin-top: 4%;;
+        margin-left: 5%;;
+        width: 90%;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+
 }
 .main-jurors {
-    margin-top: -2px;;
-    margin-bottom: 50px;;
+    // margin-top: -2px;;
+    // margin-bottom: 50px;;
     display: flex;
     flex-direction: row;
     border-top: solid black 5px;
@@ -242,7 +306,49 @@
     width: 100%;
     // margin-left: 15%;
     background-color: $color-lightest;
+    .sponsor-logos {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.three-col {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .image-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33%;
+        height: auto;
+        // background-size: 100%;
+        transition: all .2s;
+         @include media(max-width 900px){
+             width: 50%;
+             transition: all .2s;
+         }
+        &:hover {
+            transition: all .2s;
+            // width: 101%;
+            background-color: rgba( 0, 0, 0, .06)
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
+            img {
+                margin: 5%;
+                width:70%;
+                // transition: all .2s;
+            }
+        }
+
+    }
+    // a{
+    //     margin: 10px;
+    // }
 }
 // END -- NEW HOME PAGE
 
