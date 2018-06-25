@@ -24,21 +24,45 @@ $color-light-bg: #DADADA;
 //*********************************
 // Universal  *********************
 //*********************************
+@keyframes colorchange
+    {
+      0%   {background: black;}
+      25%  {background: #5AB547;}
+      50%  {background: #782E8F;}
+      75%  {background: #13C2ED;}
+      100% {background: #F5A81C;}
+    }
+
+    @-webkit-keyframes colorchange
+    {
+        0%   {background: black;}
+        25%  {background: #5AB547;}
+        50%  {background: #782E8F;}
+        75%  {background: #13C2ED;}
+        100% {background: #F5A81C;}
+    }
 #overlay {
 	position: fixed;
 	z-index: 9999;
 	width: 100%;
-	height: 110vh;
+	height: 105vh;
 	display: flex;
 	justify-content: center;
 	// align-content: center;
 	align-items: center;
-	background-color: $color-darkest;
+	background-color: #040707;
+	 animation: colorchange 2s infinite;
+	 -webkit-animation: colorchange 2s infinite;
 	.loader {
-		// width: 100%;
-		// height: 100%;
-		font-size: 36px;
-		color: $color-lightest;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 70%;
+			// margin-left: 15%;
+		}
 	}
 }
 * {
@@ -51,7 +75,7 @@ body {
 	z-index: -9999;
 	// display: none;
 	// @include background-image(url(../images/background/yellow-01.png));
-	background: black;
+	background: #040707;
 	// align: "center";
 }
 h1 {

@@ -26,6 +26,13 @@ $(window).on('load', function() {
 
 $(document).ready( function() {
 // keep content below header //
+    $('#play-video').on('click', function(e) {
+        $("#v-frame-overlay").fadeOut(function(){
+
+        });
+        $("#frame")[0].src += "&autoplay=1";
+        e.preventDefault();
+    });
     $(window).resize(function() {
         // var video = document.getElementById('frame');
         // var vidPosition = video.getBoundingClientRect();

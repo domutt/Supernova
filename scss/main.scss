@@ -3,6 +3,8 @@
 @import 'variables';
 @import 'header-nav';
 
+
+
 #page-container {
     // display: none;
     position: relative;
@@ -19,24 +21,31 @@
     }
     #sched-map {
         display: none;
+        background-color: $color-lightest;
     }
     #jurors-page {
         display: none;
+        background-color: $color-lightest;
     }
     #team-page {
         display: none;
+        background-color: $color-lightest;
     }
     #sponsors-page {
         display: none;
+        background-color: $color-lightest;
     }
     #press-page {
         display: none;
+        background-color: $color-lightest;
     }
     #about-page {
         display: none;
+        background-color: $color-lightest;
     }
     #history-page {
         display: none;
+        background-color: $color-lightest;
     }
 }
 // START - NEW HOME PAGE
@@ -59,6 +68,19 @@
         margin-left: 25%;
         width: 50%;
         height: auto;
+        transition: all 1s;
+        @include media(max-width 720px){
+            width: 60%;
+            margin-left: 20%;
+            transition: all 1s;
+        //     width: 120%;
+        //     margin-left: -10%;
+        }
+        @include media(max-width 420px){
+            transition: all 1s;
+            width: 70%;
+            margin-left: 15%;
+        }
     }
 }
 .programing {
@@ -67,6 +89,22 @@
     margin-left: 15%;
     margin-bottom: 3%;
     margin-top: 3%;
+    transition: all .2s;
+    // @include media(max-width 1024px){
+    //     transition: all 1s;
+    // }
+    @include media(max-width 720px){
+        width: 80%;
+        margin-left: 10%;
+        transition: all 1s;
+    //     width: 120%;
+    //     margin-left: -10%;
+    }
+    @include media(max-width 420px){
+        transition: all 1s;
+        width: 90%;
+        margin-left: 5%;
+    }
     .large-heading {
         width: 100%;
         height: auto;
@@ -164,7 +202,7 @@
     // overflow: auto;
     // display: block;
     // clear: both;
-    margin-bottom: 870px;
+    margin-bottom: 61%;
 
     .vid-container {
         position: absolute;
@@ -200,7 +238,7 @@
     flex-direction: column;
     width: 100%;
     // height: 400px;
-    background: url( "../images/new-homepage/comp-award.png") no-repeat bottom right, #040707;
+    background: url( "../images/new-homepage/comp-award.png") no-repeat bottom right;
     background-size: auto 100%;
     .left-just-head {
         margin-left: 5%;
@@ -312,6 +350,7 @@
     }
 }
 .three-col {
+    margin: 3% 0;
     display: flex;
     // align-items: center;
     justify-content: center;
